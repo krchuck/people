@@ -1,0 +1,11 @@
+<h1>People</h1>
+<br />
+<ul>
+<% @people.each do |p| %>
+<li><%= link_to p.full_name, person_path(p.id) %></li>
+<% end %>
+<br />
+<ul>
+<li><%= link_to "New Person", new_person_path %></li>
+<li><%= link_to 'Edit Person', edit_person_path(people) %></li>
+  <li><%= link_to 'Destroy Person', person, method: :delete %></li>

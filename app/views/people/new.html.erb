@@ -1,0 +1,27 @@
+<h1>New Page</h1>
+<%= form_for @people do |f| %>
+
+  <%= f.label :first_name %>
+  <%= f.text_area :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_area :last_name %>
+
+  <%= f.label :age %>
+  <%= f.text_area :age %>
+
+  <%= f.label :hair_color %>
+  <%= f.text_area :hair_color %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_area :eye_color %>
+
+  <%= f.label :gender %>
+  <%= f.text_area :gender %>
+
+  <%= f.label :alive %>
+  <%= f.text_area :alive %>
+
+  <%= f.submit %>
+<% end %>
+
